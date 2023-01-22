@@ -39,6 +39,6 @@ import { TestService } from './test.service';
     ReactiveFormsModule
   ],
   providers: [TestService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,HomeComponent]
 })
 export class AppModule { }
