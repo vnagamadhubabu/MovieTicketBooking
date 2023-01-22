@@ -1,0 +1,511 @@
+<body>
+  <div  class="flo">
+    <div class="fliter">
+      <h2>Filter</h2>
+      <p><button (click)="telug()">Telugu</button></p>
+      <p><button (click)="hindii()">Hindi</button></p>
+      <p><button (click)="eng()">English</button></p>
+      <p><button (click)="twodd()">2D</button></p>
+      <P><button (click)="thre()">3D</button></P>
+      <p><button (click)="alll()">All</button></p>
+    </div>
+    <div class="covid">
+      <h3>COVID 19 Guidlines</h3>
+      <ul>
+          <li>Carry your own sanitizer and in event of any contact with the surface or another individual, sanitize the fingers and hands.</li>
+          <li>When entering the mall or theatre be sure to avoid any crowding or proximity to other people.</li>
+          <li>In case of contact with surfaces, be sure to sanitize hand before touching face, nose or eyes.</li>
+          <li>Wear a mask throughout the movie and carry your own 3 D glasses (if possible).</li>
+          <li>Sit on the seat allocated to you.</li>
+      </ul>
+    </div>
+  </div>
+
+<div *ngIf="all" class="allmov">
+  <h2 style="color: white;">All Movies</h2>
+  <div class="cards">
+    <div class="card card1">
+        <div class="container">
+            <img src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/2022/adipurush/adipurush-poster-4.jpg" alt="adhii">
+        </div>
+        <div class="details">
+            <h3>ADIPURUSH</h3>
+            <p>Coming Soon.</p>
+            <button (click)="adhi()">Book Tickets</button>
+        </div>
+    </div>
+    <div class="card card2">
+        <div class="container">
+            <img src="https://wallpapercave.com/dwp1x/wp11685722.png" alt="avatar">
+        </div>
+        <div class="details">
+            <h3>Avatar  2</h3>
+            <p>Rating : 8/10.</p>
+            <button (click)="ava()">Book Tickets</button>
+        </div>
+    </div>
+    <div class="card card3">
+        <div class="container">
+            <img src="https://gallery.123telugu.com/content/slideshows/2022/11/Veera-Simha-Reddy-2/images/download.jpg" alt="vera">
+        </div>
+        <div class="details">
+            <h3>Veera Simha Reddy</h3>
+            <p>Coming Soon.</p>
+            <button (click)="veera()">Book Tickets</button>
+        </div>
+    </div>
+    <div class="card card4">
+      <div class="container">
+          <img src="https://gallery.123telugu.com/content/slideshows/2022/09/Dhamaka21/images/Dhamaka.jpg" alt="damaka">
+      </div>
+      <div class="details">
+          <h3>Dhamaka</h3>
+          <p>Ratting : 8.7/10.</p>
+          <button (click)="damka()">Book Tickets</button>
+      </div>
+  </div>
+  
+  <div class="card card5">
+      <div class="container">
+          <img src="https://i0.wp.com/www.newsbugz.com/wp-content/uploads/2021/06/18-Pages.jpg?resize=700%2C991&ssl=1" alt="page">
+      </div>
+      <div class="details">
+          <h3>18 Pages</h3>
+          <p>Ratting : 7.8/10.</p>
+          <button (click)="page()">Book Tickets</button>
+      </div>
+  </div>
+  <div class="card card6">
+      <div class="container">
+          <img src="https://moviegalleri.net/wp-content/uploads/2022/06/Vijay-Varisu-Third-Look-Poster-HD-696x1045.jpg" alt="varisu">
+      </div>
+      <div class="details">
+          <h3>Varisu</h3>
+          <p>Coming Soon.</p>
+          <button (click)="vari()">Book Tickets</button>
+      </div>
+  </div>
+  <div class="card card7">
+    <div class="container">
+        <img src="https://moviegalleri.net/wp-content/uploads/2022/05/Driver-Jamuna-Aishwarya-Rajesh-First-Look-Poster-HD-1068x1566.jpg" alt="driver">
+    </div>
+    <div class="details">
+        <h3>Driver Jamuna</h3>
+        <p>Ratting : 8.3/10.</p>
+        <button (click)="dri()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card8">
+    <div class="container">
+        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/antmanandthewaspquantumania_lob_crd_03.jpg" alt="ant">
+    </div>
+    <div class="details">
+        <h3>ANT-MAN AND THE WASP</h3>
+        <p>Coming Soon.</p>
+        <button (click)="ant()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card9">
+    <div class="container">
+        <img src="https://s.yimg.com/ny/api/res/1.2/pmUtag0_K2bi3ajFm2wxig--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTE0MjM7Y2Y9d2VicA--/https://media.zenfs.com/en/comingsoon_net_477/4cea1efe710c5b6f6c671fca3d068527" alt="jhon">
+    </div>
+    <div class="details">
+        <h3>John Wick 4</h3>
+        <p>Coming Soon.</p>
+        <button (click)="jon()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card10">
+  <div class="container">
+      <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/12/transformers-rise-of-the-beasts-poster.jpg?q=50&fit=crop&dpr=1.5" alt="Transformers">
+  </div>
+  <div class="details">
+      <h3>Transformers</h3>
+      <p>Coming Soon.</p>
+      <button (click)="tra()">Book Tickets</button>
+  </div>
+</div>
+<div class="card card11">
+  <div class="container">
+      <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/top-gear-et00340333-1671518358.jpg" alt="top_gear">
+  </div>
+  <div class="details">
+      <h3>Top Gear</h3>
+      <p>Ratting : 6/10.</p>
+      <button (click)="top()">Book Tickets</button>
+  </div>
+</div>
+<div class="card card12">
+  <div class="container">
+      <img src="https://i.pinimg.com/736x/f6/85/02/f68502d0ebd5a484e3a78dd6ec3861ab.jpg" alt="patan">
+  </div>
+  <div class="details">
+      <h3>PATHAAN</h3>
+      <p>Coming Soon.</p>
+      <button (click)="pat()">Book Tickets</button>
+  </div>
+</div>
+
+</div>
+</div>
+<div *ngIf="telugu" style="margin-left: 20px;">
+  <h2 style="color: white;">Telugu</h2>
+  <div class="cards">
+  <div class="card card1">
+    <div class="container">
+        <img src="https://gallery.123telugu.com/content/slideshows/2022/11/Veera-Simha-Reddy-2/images/download.jpg" alt="vera">
+    </div>
+    <div class="details">
+        <h3>VeeraSimha Reddy</h3>
+        <p>Coming Soon.</p>
+        <button (click)="veera()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card2">
+  <div class="container">
+      <img src="https://gallery.123telugu.com/content/slideshows/2022/09/Dhamaka21/images/Dhamaka.jpg" alt="damaka">
+  </div>
+  <div class="details">
+      <h3>Dhamaka</h3>
+      <p>Ratting : 8.7/10.</p>
+      <button (click)="damka()">Book Tickets</button>
+  </div>
+</div>
+<div class="card card11">
+    <div class="container">
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/top-gear-et00340333-1671518358.jpg" alt="top_gear">
+    </div>
+    <div class="details">
+        <h3>Top Gear</h3>
+        <p>Ratting : 6/10.</p>
+        <button (click)="top()">Book Tickets</button>
+    </div>
+  </div>
+
+<div class="card card3">
+  <div class="container">
+      <img src="https://i0.wp.com/www.newsbugz.com/wp-content/uploads/2021/06/18-Pages.jpg?resize=700%2C991&ssl=1" alt="page">
+  </div>
+  <div class="page">
+      <h3>18 Pages</h3>
+      <p>Ratting : 7.8/10.</p>
+      <button (click)="page()">Book Tickets</button>
+  </div>
+</div>
+<div class="card card4">
+  <div class="container">
+      <img src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/2022/adipurush/adipurush-poster-4.jpg" alt="adhi">
+  </div>
+  <div class="details">
+      <h3>ADIPURUSH</h3>
+      <p>Coming Soon.</p>
+      <button (click)="adhi()">Book Tickets</button>
+  </div>
+</div>
+  </div>
+  
+</div>
+<div *ngIf="english" style="margin-left: 20px;">
+  <h2 style="color: white;">English</h2>
+  <div class="cards">
+    
+    <div class="card card2">
+        <div class="container">
+            <img src="https://wallpapercave.com/dwp1x/wp11685722.png" alt="avatar">
+        </div>
+        <div class="details">
+            <h3>Avatar  2</h3>
+            <p>Rating : 8/10.</p>
+            <button (click)="ava()">Book Tickets</button>
+        </div>
+    </div>
+
+<div class="card card8">
+    <div class="container">
+        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/antmanandthewaspquantumania_lob_crd_03.jpg" alt="ant">
+    </div>
+    <div class="details">
+        <h3>ANT-MAN AND THE WASP</h3>
+        <p>Coming Soon.</p>
+        <button (click)="ant()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card9">
+    <div class="container">
+        <img src="https://s.yimg.com/ny/api/res/1.2/pmUtag0_K2bi3ajFm2wxig--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTE0MjM7Y2Y9d2VicA--/https://media.zenfs.com/en/comingsoon_net_477/4cea1efe710c5b6f6c671fca3d068527" alt="jhon">
+    </div>
+    <div class="details">
+        <h3>John Wick 4</h3>
+        <p>Coming Soon.</p>
+        <button (click)="jon()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card10">
+  <div class="container">
+      <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/12/transformers-rise-of-the-beasts-poster.jpg?q=50&fit=crop&dpr=1.5" alt="Transformers">
+  </div>
+  <div class="details">
+      <h3>Transformers</h3>
+      <p>Coming Soon.</p>
+      <button (click)="tra()">Book Tickets</button>
+  </div>
+</div>
+
+</div>
+</div>
+<div *ngIf="threed" style="margin-left: 20px;">
+  <h2 style="color: white;">All 3D Movies</h2>
+  <div class="cards">
+    <div class="card card1">
+        <div class="container">
+            <img src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/2022/adipurush/adipurush-poster-4.jpg" alt="adhi">
+        </div>
+        <div class="details">
+            <h3>ADIPURUSH</h3>
+            <p>Coming Soon.</p>
+            <button (click)="adhi()">Book Tickets</button>
+        </div>
+    </div>
+    <div class="card card2">
+        <div class="container">
+            <img src="https://wallpapercave.com/dwp1x/wp11685722.png" alt="avatar">
+        </div>
+        <div class="details">
+            <h3>Avatar  2</h3>
+            <p>Rating : 8/10.</p>
+            <button (click)="ava()">Book Tickets</button>
+        </div>
+    </div>
+    
+<div class="card card8">
+    <div class="container">
+        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/antmanandthewaspquantumania_lob_crd_03.jpg" alt="ant">
+    </div>
+    <div class="details">
+        <h3>ANT-MAN AND THE WASP</h3>
+        <p>Coming Soon.</p>
+        <button (click)="ant()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card9">
+    <div class="container">
+        <img src="https://s.yimg.com/ny/api/res/1.2/pmUtag0_K2bi3ajFm2wxig--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTE0MjM7Y2Y9d2VicA--/https://media.zenfs.com/en/comingsoon_net_477/4cea1efe710c5b6f6c671fca3d068527" alt="jhon">
+    </div>
+    <div class="details">
+        <h3>John Wick 4</h3>
+        <p>Coming Soon.</p>
+        <button (click)="jon()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card10">
+  <div class="container">
+      <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/12/transformers-rise-of-the-beasts-poster.jpg?q=50&fit=crop&dpr=1.5" alt="Transformers">
+  </div>
+  <div class="details">
+      <h3>Transformers</h3>
+      <p>Coming Soon.</p>
+      <button (click)="tra()">Book Tickets</button>
+  </div>
+</div>
+
+
+</div>
+</div>
+<div *ngIf="twod" style="margin-left: 20px;">
+  <h2 style="color: white;">All 2D Movies</h2>
+  <div class="cards">
+    <div class="card card1">
+        <div class="container">
+            <img src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/2022/adipurush/adipurush-poster-4.jpg" alt="andhi">
+        </div>
+        <div class="details">
+            <h3>ADIPURUSH</h3>
+            <p>Coming Soon.</p>
+            <button (click)="adhi()">Book Tickets</button>
+        </div>
+    </div>
+    <div class="card card2">
+        <div class="container">
+            <img src="https://wallpapercave.com/dwp1x/wp11685722.png" alt="avatar">
+        </div>
+        <div class="details">
+            <h3>Avatar  2</h3>
+            <p>Rating : 8/10.</p>
+            <button (click)="ava()">Book Tickets</button>
+        </div>
+    </div>
+    <div class="card card3">
+        <div class="container">
+            <img src="https://gallery.123telugu.com/content/slideshows/2022/11/Veera-Simha-Reddy-2/images/download.jpg" alt="vera">
+        </div>
+        <div class="details">
+            <h3>Veera Simha Reddy</h3>
+            <p>Coming Soon.</p>
+            <button (click)="veera()">Book Tickets</button>
+        </div>
+    </div>
+    <div class="card card4">
+      <div class="container">
+          <img src="https://gallery.123telugu.com/content/slideshows/2022/09/Dhamaka21/images/Dhamaka.jpg" alt="damaka">
+      </div>
+      <div class="details">
+          <h3>Dhamaka</h3>
+          <p>Ratting : 8.7/10.</p>
+          <button (click)="damka()">Book Tickets</button>
+      </div>
+  </div>
+  
+  <div class="card card5">
+      <div class="container">
+          <img src="https://i0.wp.com/www.newsbugz.com/wp-content/uploads/2021/06/18-Pages.jpg?resize=700%2C991&ssl=1" alt="page">
+      </div>
+      <div class="details">
+          <h3>18 Pages</h3>
+          <p>Ratting : 7.8/10.</p>
+          <button (click)="page()">Book Tickets</button>
+      </div>
+  </div>
+  <div class="card card6">
+      <div class="container">
+          <img src="https://moviegalleri.net/wp-content/uploads/2022/06/Vijay-Varisu-Third-Look-Poster-HD-696x1045.jpg" alt="varisu">
+      </div>
+      <div class="details">
+          <h3>Varisu</h3>
+          <p>Coming Soon.</p>
+          <button (click)="vari()">Book Tickets</button>
+      </div>
+  </div>
+  <div class="card card7">
+    <div class="container">
+        <img src="https://moviegalleri.net/wp-content/uploads/2022/05/Driver-Jamuna-Aishwarya-Rajesh-First-Look-Poster-HD-1068x1566.jpg" alt="driver">
+    </div>
+    <div class="details">
+        <h3>Driver Jamuna</h3>
+        <p>Ratting : 8.3/10.</p>
+        <button (click)="dri()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card8">
+    <div class="container">
+        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/antmanandthewaspquantumania_lob_crd_03.jpg" alt="ant">
+    </div>
+    <div class="details">
+        <h3>ANT-MAN AND THE WASP</h3>
+        <p>Coming Soon.</p>
+        <button (click)="ant()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card9">
+    <div class="container">
+        <img src="https://s.yimg.com/ny/api/res/1.2/pmUtag0_K2bi3ajFm2wxig--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTE0MjM7Y2Y9d2VicA--/https://media.zenfs.com/en/comingsoon_net_477/4cea1efe710c5b6f6c671fca3d068527" alt="jhon">
+    </div>
+    <div class="details">
+        <h3>John Wick 4</h3>
+        <p>Coming Soon.</p>
+        <button (click)="jon()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card10">
+  <div class="container">
+      <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/12/transformers-rise-of-the-beasts-poster.jpg?q=50&fit=crop&dpr=1.5" alt="Transformers">
+  </div>
+  <div class="details">
+      <h3>Transformers</h3>
+      <p>Coming Soon.</p>
+      <button (click)="tra()">Book Tickets</button>
+  </div>
+</div>
+<div class="card card11">
+  <div class="container">
+      <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/top-gear-et00340333-1671518358.jpg" alt="top_gear">
+  </div>
+  <div class="details">
+      <h3>Top Gear</h3>
+      <p>Ratting : 6/10.</p>
+      <button (click)="top()">Book Tickets</button>
+  </div>
+</div>
+<div class="card card12">
+  <div class="container">
+      <img src="https://i.pinimg.com/736x/f6/85/02/f68502d0ebd5a484e3a78dd6ec3861ab.jpg" alt="patan">
+  </div>
+  <div class="details">
+      <h3>PATHAAN</h3>
+      <p>Ratting : 6/10.</p>
+      <button (click)="pat()">Book Tickets</button>
+  </div>
+</div>
+
+</div>
+</div>
+<div *ngIf="hindi">
+  <h2 style="color: white;">Hindi</h2>
+  
+  <div class="cards">
+    
+    <div class="card card1">
+        <div class="container">
+            <img src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/2022/adipurush/adipurush-poster-4.jpg" alt="adhi">
+        </div>
+        <div class="details">
+            <h3>ADIPURUSH</h3>
+            <p>Coming Soon.</p>
+            <button (click)="adhi()">Book Tickets</button>
+        </div>
+    </div>
+    <div class="card card2">
+        <div class="container">
+            <img src="https://wallpapercave.com/dwp1x/wp11685722.png" alt="avatar">
+        </div>
+        <div class="details">
+            <h3>Avatar  2</h3>
+            <p>Rating : 8/10.</p>
+            <button (click)="ava()">Book Tickets</button>
+        </div>
+    </div>
+<div class="card card8">
+    <div class="container">
+        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/antmanandthewaspquantumania_lob_crd_03.jpg" alt="ant">
+    </div>
+    <div class="details">
+        <h3>ANT-MAN AND THE WASP</h3>
+        <p>Coming Soon.</p>
+        <button (click)="ant()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card9">
+    <div class="container">
+        <img src="https://s.yimg.com/ny/api/res/1.2/pmUtag0_K2bi3ajFm2wxig--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTE0MjM7Y2Y9d2VicA--/https://media.zenfs.com/en/comingsoon_net_477/4cea1efe710c5b6f6c671fca3d068527" alt="jhon">
+    </div>
+    <div class="details">
+        <h3>John Wick 4</h3>
+        <p>Coming Soon.</p>
+        <button (click)="jon()">Book Tickets</button>
+    </div>
+</div>
+<div class="card card10">
+  <div class="container">
+      <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/12/transformers-rise-of-the-beasts-poster.jpg?q=50&fit=crop&dpr=1.5" alt="Transformers">
+  </div>
+  <div class="details">
+      <h3>Transformers</h3>
+      <p>Coming Soon.</p>
+      <button (click)="tra()">Book Tickets</button>
+  </div>
+</div>
+<div class="card card12">
+    <div class="container">
+        <img src="https://i.pinimg.com/736x/f6/85/02/f68502d0ebd5a484e3a78dd6ec3861ab.jpg" alt="patan">
+    </div>
+    <div class="details">
+        <h3>PATHAAN</h3>
+        <p>Coming Soon.</p>
+        <button (click)="pat()">Book Tickets</button>
+    </div>
+  </div>
+
+
+</div>
+
+</div>
+</body>

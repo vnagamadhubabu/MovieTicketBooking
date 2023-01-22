@@ -1,0 +1,31 @@
+mat-button-toggle{
+  color:wheat;
+  background-color:lightcoral;
+  border-radius: 10px;
+}
+mat-button-toggle-group{
+  border: none;
+  box-sizing: 500px;
+  
+}
+mat-button-toggle:hover{
+  background-color:salmon;
+  color: blue;
+
+}
+.theaters{
+  background-color: #009688;
+  width: 400px;
+  padding: 35px;
+  border-radius: 10px;
+  font-size: 35px;
+  font-weight: bolder;
+  border: none;
+  color: white;
+}
+.theaters:hover{
+  background-color:lightgray ;
+  color: blue;
+
+}
+
